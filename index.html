@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/magnific-popup.css"/>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="javascript" src="js/bootstrap.js"></script>
     <script type="javascript" src="js/bootstrap.bundle.js"></script>
     <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.masonry.min.js"></script>
-    <script src="js/jquery.history.js"></script>
-    <script src="js/js-url.min.js"></script>
-    <script src="js/jquerypp.custom.js"></script>
-    <script src="js/gamma.js"></script>
+    <script src="assets/jquery.magnific-popup.min.js"></script>
     <meta charset="UTF-8">
     <title>Шелк</title>
 </head>
@@ -198,6 +194,37 @@
                Галерея
         </span>
 </div>
+<div class="galary container">
+    <div class="popup-gallery row">
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        <a href="images/galary/IMG_1581.JPG" class="col-md-3 text-center mb-2" title="The Cleaner">
+            <img src="images/galary/IMG_1581.JPG" height="200">
+        </a>
+        
+
+
+    </div>
+</div>
 <div class="row col-md-12 col-md-12 justify-content-center align-items-center mt-5 pt-5 pb-4">
     <hr class="col-md-12 pink">
     <span class="title-block px-5 py-3">
@@ -215,6 +242,23 @@
             responsive:{
                 600:{
                     items:5
+                }
+            }
+        });
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
                 }
             }
         });
