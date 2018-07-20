@@ -79,4 +79,6 @@ span.title-block {
 .comment-block .comment-video {
     position: absolute;
     margin-left: -30px;
+    top: 40px;
+    left: 33%;
 }

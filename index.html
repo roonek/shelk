@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="javascript" src="js/bootstrap.js"></script>
     <script type="javascript" src="js/bootstrap.bundle.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.history.js"></script>
+    <script src="js/js-url.min.js"></script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/gamma.js"></script>
     <meta charset="UTF-8">
     <title>Шелк</title>
 </head>
@@ -157,12 +163,32 @@
         </span>
 </div>
 <div class="user_comment">
-    <div class="loop1 " data="owl-carousel owl-theme">
+    <div class="loop1">
         <div class="item container comment-block">
-            <div class="w-35 bg-light d-inline-block text-center comment-text">
-                <title>John Doe</title>
+            <div class="w-35 bg-light text-center comment-text p-3 row">
+                <div class="col-md-3 text-center">
+                    <img src="images/comments/ava-comment.png" width="70">
+                </div>
+                <div class="col-md-9">
+                    <div class="title d-block">John Doe</div>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="col-md-11 comment-text-content text-left mt-3">
+                    <span>
+                        Решила первый раз попробовать и понеслось!<br>
+                        Решила первый раз попробовать и понеслось!
+                        Решила первый раз попробовать и понеслось!
+                        Решила первый раз попробовать и понеслось!
+                        Решила первый раз попробовать и понеслось!
+                        Решила первый раз попробовать и понеслось!
+
+                    </span>
+                </div>
+
             </div>
-            <div class="w-50 bg-light d-inline-block comment-video">2</div>
+            <div class="bg-light comment-video">
+                <iframe width="460" height="255" src="https://www.youtube.com/embed/fAyoVUgqBNk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </div>
@@ -192,6 +218,7 @@
                 }
             }
         });
+
         $('.navbar-toggler').click(function () {
             $($(this).data('target')).toggle();
         })
