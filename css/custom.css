@@ -23,7 +23,7 @@ body {
 }
 
 .slider img {
-    height: 400px;
+    width: 100%;
 }
 .about_us {
     background: url(../images/bg_about.png) no-repeat;
