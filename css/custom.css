@@ -82,3 +82,24 @@ span.title-block {
     top: 40px;
     left: 33%;
 }
+.sertiv {
+    height: 500px;
+    background: url(../images/bg-sertiv.png) no-repeat;
+    background-size: cover;
+}
+footer .nav-item a {
+    color: #848484;
+}
+footer li {
+    list-style-type: none
+}
+footer h3 {
+    color: #a64d72;
+}
+footer .btn {
+    margin-left: -5px;
+    margin-top: -5px;
+}
+footer input {
+    height: 38px;
+}
