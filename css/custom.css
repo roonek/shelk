@@ -103,3 +103,26 @@ footer .btn {
 footer input {
     height: 38px;
 }
+.text_about_hide {
+    display: none;
+}
+@media (max-width: 990px) {
+    .price-list .owl-item.active {
+        width: 300px!important;
+    }
+    .commands .item {
+        height: 350px!important;
+    }
+    .avatar_member {
+        height: 180px;
+    }
+    .comment-text {
+        width: 60%!important;
+    }
+    .comment-video {
+        margin-left: 110px!important;
+    }
+    .sertiv .container {
+        max-width: 100% !important;
+    }
+}
