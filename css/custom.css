@@ -28,6 +28,7 @@ body {
 .about_us {
     background: url(../images/bg_about.png) no-repeat;
     background-size: 35%;
+
 }
 .about_us img {
     width: 100%;
@@ -76,9 +77,12 @@ span.title-block {
 .comment-block {
     position: relative;
 }
+.comment-text {
+    margin-left: 20%;
+}
 .comment-block .comment-video {
     position: absolute;
-    margin-left: -30px;
+    margin-left: 185px;
     top: 40px;
     left: 33%;
 }
@@ -118,6 +122,7 @@ footer input {
     }
     .comment-text {
         width: 60%!important;
+        margin-left: 0!important;
     }
     .comment-video {
         margin-left: 110px!important;
