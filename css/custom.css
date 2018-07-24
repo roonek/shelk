@@ -79,6 +79,7 @@ span.title-block {
 }
 .comment-text {
     margin-left: 20%;
+    min-height: 400px;
 }
 .comment-block .comment-video {
     position: absolute;
@@ -130,4 +131,28 @@ footer input {
     .sertiv .container {
         max-width: 100% !important;
     }
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+.owl-stage-outer.owl-height {
+    min-height: 400px;
 }
